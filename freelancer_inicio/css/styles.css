@@ -1,0 +1,144 @@
+:root{
+    --blanco: rgb(249, 238, 238);
+    --oscuro: #212121;
+    --primario: #46BD94;
+    --secundario: #9BFF00;
+    --gris: #757575;
+}
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Merienda', cursive;
+    background-image: linear-gradient(to top, #e5fddf 0%, var(--blanco) 100% );
+    
+}
+.titulo {
+    text-align: center;
+    font-size: 3.4rem;  /* 1 rem = 10 px */
+}
+.titulo span {
+    font-size: 1.5rem;
+    color: var(--oscuro);
+    
+}
+.contenedor {
+    max-width: 105rem;
+    margin: 2.5rem auto 1rem auto; 
+}
+
+.contenedor h2, h3 {
+    text-align: center;
+}
+
+.nav-bg{
+    background-color: var(--primario);
+}
+
+.boton {
+    background-color: var(--primario);
+    color: var(--blanco);
+    padding: 1rem 2rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: 1.5rem;
+    width: 60%;
+    text-align: center;
+
+}
+
+@media (min-width: 768px) {
+    .boton {
+        width: auto;
+    }
+}
+
+.sombra{
+    -webkit-box-shadow: 0px 0px 11px 11px rgba(0,0,0,0.23);
+    -moz-box-shadow: 0px 0px 11px 11px rgba(0,0,0,0.23);
+    box-shadow: 0px 0px 11px 11px rgba(0,0,0,0.23);
+    background-color: #ffffffff;
+    padding: 2rem;
+}
+.tituloSecundario {
+    text-align: center;
+    font-size: 2.4rem;
+ 
+}
+
+.navegacion-principal{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (min-width: 768px) { 
+    .navegacion-principal{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.navegacion-principal a{
+    color:var(--blanco);
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 1.3rem;
+}
+.tituloSecundario span {
+    font-size: 1.5rem;
+}
+
+.navegacion-principal a:hover {
+    background-color: var(--secundario);
+    color: var(--oscuro)
+}
+
+.hero {
+    background-image: url(../img/hero.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    position: relative;
+    bottom: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.contenido-hero { 
+    position: absolute;
+    background-color: rgba( 0, 0, 0, .4);
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+}
+
+.contenido-hero h2 {
+    color: var(--blanco)
+}
+
+.contenido-hero p {
+    color: var(--blanco);
+}
+
+.ciudad{
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 2rem;
+    margin-right: 2.5rem;
+    font-size: 2rem;
+}
+
