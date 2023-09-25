@@ -16,7 +16,7 @@ html {
     scroll-snap-align: center;
     scroll-snap-stop: always;
 }
-footer {
+.formulario {
     scroll-snap-align: end; 
     margin-top: 2rem;
 }
